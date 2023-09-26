@@ -1,0 +1,24 @@
+/* Fuentes del sitio*/
+
+/* font-family: 'Kiwi Maru', serif;*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+
+
+/* codigo del contenedor principal*/
+#main-contain{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../image/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+ 
+}
+#main-contain .logo{
+    width: 100%;
+    height: 100vh;
+    background-image:url('image/fondo.png');
+
+}
