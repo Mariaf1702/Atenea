@@ -1,24 +1,112 @@
 /* Fuentes del sitio*/
 
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
 /* font-family: 'Kiwi Maru', serif;*/
 
-
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500;800&family=MuseoModerno:ital@1&family=Orbit&family=Roboto+Condensed&family=Roboto+Slab:wght@300&display=swap');/* font-family: 'Kaisei Tokumin', serif; */
+/* font-family: 'Kaisei Tokumin', serif;
+font-family: 'MuseoModerno', cursive;
+font-family: 'Orbit', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Slab', serif; */
 
 
 /* codigo del contenedor principal*/
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
 #main-contain{
-    width: 100%;
-    height: 100vh;
+    width: calc(100% - 168px);
+    height: calc(100vh - 168px); /*vh toma el alto maximo del dispositivo*/
+    padding: 84px;
     background-image:url('../image/fondo.png');
     background-repeat: no-repeat;
-    background-size: cover;
-  
- 
+    background-size: cover; 
 }
 #main-contain .logo{
     width: 100%;
-    height: 100vh;
-    background-image:url('image/fondo.png');
-
+    height: 109px;
 }
+#main-contain .logo img{
+    width: auto;
+    height: 109px;
+    padding-left: 8%;
+}
+/* Estilos para el segundo contenedor (Info e imagen) */
+.second-contain{
+    width: 100%;
+    height: 800px;
+    display: inline-flex; /*Quita los saltos de linea*/  
+    /* justify-content: center; */
+    justify-content:space-around; 
+    padding-top: 80px;
+}
+/* Estilos para el divisor de la informacion */
+.second-contain .info{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+.second-contain .info h1{
+    font-size: 64px;
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight: 800;
+    color: black;
+}
+.second-contain .info h1 p{
+    font-size: 36px;
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight: 800;
+    color: #014300;
+}
+/*Estilos para los botones*/
+.second-contain .info .main-button{
+    width: 279px;
+    height: 96px;
+    font-size: 30px;
+    font-family: 'Kaisei Tokumin', serif;
+    background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));
+    border-radius: 50px;
+    font-weight: 800;
+}
+/* Estilos para el divisor de la imagen */
+.second-contain .image-runner{
+    width: 40%;
+    height: 100%;
+}
+.second-contain .image-runner img{
+    width: 100%;
+    height: 100%;
+}
+/*Estilos para la barra de navegación*/
+.logo .navigation{
+    position: absolute;
+    right: 23%;
+    width: auto;
+    height: 120px;
+    display: inline-flex; 
+    background-color: #014300;   
+}
+.logo .navigation ul{
+    list-style: none;    
+}
+.logo .navigation ul li{
+    display: inline-block;
+    width: 90px;
+    padding: 35px 15px;
+    margin: 15px 15px;
+    border-radius: 60px;
+    background-color:#0066B7;
+    
+}
+
+
+
+
+
+
+
+
+
