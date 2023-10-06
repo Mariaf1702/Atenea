@@ -16,59 +16,53 @@ font-family: 'Roboto Slab', serif; */
     padding: 0;
     margin: 0;
 }
+/* codigo para el logo */
 .logo{
-    width: 100%;
-    height: 109px;
+    width: 90%;
+    height: 100px;
 }
+/* codigo para el titulo */
 .titulo{
     width: 100%;
-    height: 109px;
-    background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));
+    height: 90px;
+    background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgb(15, 108, 184),rgba(0,102,183));
 }
 .titulo h1{
-    font-size: 55px;
-
+    width: 90%;
+    font-size: 50px;
+    color: #F1F1F1;
+    text-align: center;
+    padding: 15px;
 }
-
-
+/* Codigo para el contenedor principal */
 #main-contain{
-    width: calc(100% - 100px);
-    height: 100vh;
-    /* padding: 84px; */
+    width: 100%;
+    height: 85vh;
     background-image:url('../image/fondo.png');
     background-repeat: no-repeat;
     background-size:contain;
-}
-
-
-/*
-#main-contain .logo img{
-    width: auto;
-    height: 109px;
-    padding-left: 8%;
+    background-position: center;
 }
 /* Estilos para el segundo contenedor (Info e imagen) */
-/* .second-contain{
-    width: 100%;
-    height: 800px;
-    display: inline-flex; /*Quita los saltos de linea*/  
-    /* justify-content: center; */
-    justify-content:space-around; 
-    padding-top: 80px;
+.second-contain{
+    width: 40%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(251, 251, 251,), rgba(255, 255, 255, 0),);
+    margin-left: 80px;    
 }
 /* Estilos para el divisor de la informacion */
-/*
 .second-contain .info{
-    width: 30%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
     text-align: center;
+    padding-top: 100px;
 }
-.second-contain .info h1{
-    font-size: 64px;
+.second-contain .info p{
+    font-size: 30px;
     font-family: 'Kaisei Tokumin', serif;
     font-weight: 800;
     color: black;
-}
+}/*
 .second-contain .info h1 p{
     font-size: 36px;
     font-family: 'Kaisei Tokumin', serif;
@@ -120,4 +114,3 @@ font-family: 'Roboto Slab', serif; */
     font-size: 50px;
 }  */
 
-  
