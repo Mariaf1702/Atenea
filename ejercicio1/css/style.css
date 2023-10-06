@@ -24,12 +24,12 @@ font-family: 'Roboto Slab', serif; */
 /* codigo para el titulo */
 .titulo{
     width: 100%;
-    height: 90px;
+    height: 75px;
     background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgb(15, 108, 184),rgba(0,102,183));
 }
 .titulo h1{
     width: 90%;
-    font-size: 50px;
+    font-size: 45px;
     color: #F1F1F1;
     text-align: center;
     padding: 15px;
@@ -37,7 +37,7 @@ font-family: 'Roboto Slab', serif; */
 /* Codigo para el contenedor principal */
 #main-contain{
     width: 100%;
-    height: 85vh;
+    height: 80vh;
     background-image:url('../image/fondo.png');
     background-repeat: no-repeat;
     background-size:contain;
@@ -47,70 +47,59 @@ font-family: 'Roboto Slab', serif; */
 .second-contain{
     width: 40%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(251, 251, 251,), rgba(255, 255, 255, 0),);
-    margin-left: 80px;    
+    background-image: linear-gradient(to right, rgba(251, 251, 251,1), rgba(251, 251, 251,1.9), rgba(251, 251, 251,0.5),rgba(255, 255, 255,0));
+    margin-left: 8%;    
 }
 /* Estilos para el divisor de la informacion */
 .second-contain .info{
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    /* height: 40%; */
     text-align: center;
     padding-top: 100px;
 }
 .second-contain .info p{
     font-size: 30px;
     font-family: 'Kaisei Tokumin', serif;
-    font-weight: 800;
+    font-weight: 800;   
     color: black;
-}/*
-.second-contain .info h1 p{
-    font-size: 36px;
-    font-family: 'Kaisei Tokumin', serif;
-    font-weight: 800;
-    color: #014300;
 }
-/*Estilos para los botones*/
-/*
-.second-contain .info .main-button{
-    width: 279px;
-    height: 96px;
-    font-size: 30px;
-    font-family: 'Kaisei Tokumin', serif;
-    background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));
-    border-radius: 50px;
-    font-weight: 800;
-}
-/* Estilos para el divisor de la imagen */
-/* .second-contain .image-runner{
-    width: 40%;
-    height: 100%;
-}
-.second-contain .image-runner img{
-    width: 100%;
-    height: 100%;
-}
-/*Estilos para la barra de navegación*/
-/* .logo .navigation{
+/*Estilos para el boton*/
+#main-contain .next-button{
     position: absolute;
-    right: 23%;
-    width: auto;
-    height: 120px;
-    display: inline-flex; 
+    background-color: #ffffff00;
+    font-size: 45px;
+    right: 16%;
+    bottom: 40%;    
 }
-.logo .navigation ul{
-    list-style: none;    
-    text-align: center; 
+/* Estilos para el boton*/
+.results-button{
+    width: 25%;
+    height: 8%;
+    background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));
+    font-size: 20px;
+    font-family: 'Kaisei Tokumin', serif;
+    border-radius: 25px;    
+    margin: 18%;
 }
-.logo .navigation ul li{
-    display: inline-block;
-    width: 90px;
-    padding: 18px 15px;
-    margin: 15px 15px;
-    border-radius: 60px;
-    background-color:#0066B7;    
+@media(max-width:1320px){ /* De 1300 para abajo vaa  coger las siguientes condiciones*/
+
+    .second-contain .info p{
+        font-size: 25px;
+    }
+    #main-contain{
+        height: 75%;
+    }
 }
-.logo .navigation ul li i{
-    color: whitesmoke;
-    font-size: 50px;
-}  */
+
+@media(max-width:1395px){ /* De 1300 para abajo vaa  coger las siguientes condiciones*/
+    #main-contain{
+        height: 75%;
+    }
+}
+@media(max-width:1155px){ /* De 1300 para abajo vaa  coger las siguientes condiciones*/
+    .titulo h1{
+        font-size: 35px;
+    }   
+}
+
 
