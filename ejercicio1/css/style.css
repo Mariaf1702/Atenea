@@ -38,37 +38,40 @@ font-family: 'Roboto Slab', serif; */
 #main-contain{
     width: 100%;
     height: 80vh;
-    background-image:url('../image/fondo.png');
+    background-image:url('../image/fondo2.jpeg');
     background-repeat: no-repeat;
     background-size:contain;
-    background-position: center;
+    background-position: center top;
 }
 /* Estilos para el segundo contenedor (Info e imagen) */
 .second-contain{
-    width: 40%;
+    width: 50%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(251, 251, 251,1), rgba(251, 251, 251,1.9), rgba(251, 251, 251,0.5),rgba(255, 255, 255,0));
-    margin-left: 8%;    
+    /* background-color: blue; */
+    background-image: linear-gradient(to right, rgba(251, 251, 251,1.9), rgba(251, 251, 251,0.9), rgba(251, 251, 251,0.8),rgba(255, 255, 255,0));
+       
 }
 /* Estilos para el divisor de la informacion */
 .second-contain .info{
-    width: 65%;
-    /* height: 40%; */
+    width: 55%;
     text-align: center;
     padding-top: 100px;
+    margin-left: 10%;
+
+
 }
 .second-contain .info p{
     font-size: 30px;
     font-family: 'Kaisei Tokumin', serif;
     font-weight: 800;   
-    color: black;
-}
+    color: black;    
+} 
 /*Estilos para el boton*/
 #main-contain .next-button{
     position: absolute;
     background-color: #ffffff00;
     font-size: 45px;
-    right: 16%;
+    right: 5%;
     bottom: 40%;    
 }
 /* Estilos para el boton*/
@@ -81,7 +84,8 @@ font-family: 'Roboto Slab', serif; */
     border-radius: 25px;    
     margin: 18%;
 }
-@media(max-width:1320px){ /* De 1300 para abajo vaa  coger las siguientes condiciones*/
+/* De 1300 para abajo vaa  coger las siguientes condiciones*/
+/*@media(max-width:1320px){ 
 
     .second-contain .info p{
         font-size: 25px;
@@ -91,15 +95,13 @@ font-family: 'Roboto Slab', serif; */
     }
 }
 
-@media(max-width:1395px){ /* De 1300 para abajo vaa  coger las siguientes condiciones*/
+/* @media(max-width:1395px){ 
     #main-contain{
         height: 75%;
     }
 }
-@media(max-width:1155px){ /* De 1300 para abajo vaa  coger las siguientes condiciones*/
+@media(max-width:1155px){ 
     .titulo h1{
         font-size: 35px;
     }   
-}
-
-
+} */
