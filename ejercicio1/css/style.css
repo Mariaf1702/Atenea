@@ -16,30 +16,29 @@ font-family: 'Roboto Slab', serif; */
     padding: 0;
     margin: 0;
 }
-/* codigo para el logo */
-.logo{
+/*Estilos del header*/
+header{
     width: 100%;
     height: 100px;
     display: flex;
+    align-items: center;
+    border-bottom: solid 1px #777777;
 }
-.logo .imagen{
-    width: 70%;
-    height: 100px;
+header img{
+    height: 80%;
+    margin-left: 40px;
 }
-/*Estilos para barra de navegación*/
-.logo .navegacion{
-    width: 30%;
-    height: 100px; 
+header nav{
+    position: absolute;
+    right:0;
 }
-.logo .navegacion ul{
-    list-style: none ;
-    height: 100px; 
-    float: right;  
+header nav ul{
+    display: flex;
+    list-style: none ;    
 }
-.logo .navegacion ul li{
-    display: inline-block;
-    padding: 50px 25px 2px 15px;
-    font-size: 40px;    
+header nav ul li a{
+    font-size: 50px;
+    margin: 25px;
 }
 /* codigo para el titulo */
 .titulo{
@@ -102,6 +101,9 @@ font-family: 'Roboto Slab', serif; */
 }
 /* De 1295 para abajo vaa  coger las siguientes condiciones*/
 @media(max-width:1295px){
+    header nav ul li a{
+        font-size: 45px;
+    }
     .second-contain .info p{
         font-size: 27px;
     }
@@ -111,74 +113,104 @@ font-family: 'Roboto Slab', serif; */
     .results-button{
         font-size: 18px;
     }
-    .logo .navegacion ul li{
-        font-size: 32px;
-    }
 }
 @media(max-width:1100px){
+    .titulo h1{
+        font-size: 35px;
+    }
     .second-contain .info p{
         font-size: 24px;
-    }
-    .logo img{
-        height: 90px;
-    }
+    }                                                                                                                                                                                                                                                                                                    
 }
 @media(max-width:990px){
-    .logo{
-        height: 150px;
-        flex-direction: column;
+    header{
+        height: 160px;
+        display:block;
+        text-align: center;
     }
-    .logo .imagen{
+    header img{
         height: 100px;
-        width: 100%;
-        display:flex;
         justify-content: center;
     }
     /*Estilos para barra de navegación*/
-    .logo .navegacion{
+    header nav{
         width: 100%;
-        height: 50px; 
-        display:flex;
+        height: 60px;
+    }
+    header nav ul{
+        height: 50px;
         justify-content: center;
     }
-    .logo .navegacion ul{
-        height: 50px; 
-        display: flex;
-    }
-    .logo .navegacion ul li{
-        padding: 0px 15px;
-        font-size: 40px;    
+    header nav ul li{
+        font-size: 40px;
     }
     .titulo{
         height: 80px;
         background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgb(15, 108, 184),rgba(0,102,183));
     }
     .titulo h1{
-        font-size: 25px;
+        font-size: 30px;
         padding: 10px;
+        width: 70%;
+        margin: auto;
     }
     #main-contain{
-        background-image:url('../image/fondovertical.png'); 
+        background-size: auto;
+        position: relative;
     }
     .second-contain{
         width: 100%;
-        display: flex;
-        justify-content: baseline;
-        height: 200px;
+        height: 30%;
+        position: absolute;
+        bottom: 2%;
         background-image: linear-gradient(to top, rgba(251, 251, 251,1.9), rgba(251, 251, 251,0.9), rgba(251, 251, 251,0.8),rgba(255, 255, 255,0));
+        display: flex;
     }
     /* Estilos para el divisor de la informacion */
     .second-contain .info{
-        width: 55%;
+        width: 60%;
         text-align: center;
-        padding-top: 100px;
-        margin-left: 10%;
+        padding-top: 60px;
+        margin-left: 5%;
     }
     .second-contain .info p{
-        font-size: 30px;
-        font-family: 'Kaisei Tokumin', serif;
-        font-weight: 800;
-        color: black;
+        font-size: 20px;
+    }
+    .results-button{
+        width: 25%;
+        height: 30%;
+        background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));
+        font-size: 20px;
+        margin: auto;
     }
 }
+@media(max-width:700px){
+    header{
+        height: 130px;
+    }
+    header img{
+        height: 80px;
+    }
+    header nav{
+        height: 30px;
+    }
+    header nav ul{
+        height: 25px;
+    }
+    header nav ul li a{
+        font-size: 30px;
+    }
+    .titulo{
+        height: 75px;
+    }
+    .titulo h1{
+        font-size: 22px;
+    }
+    .titulo h1{
+        font-size: 22px;
+    }
+}
+
+
+
 
