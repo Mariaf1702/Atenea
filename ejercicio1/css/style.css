@@ -21,8 +21,7 @@ header{
     width: 100%;
     height: 100px;
     display: flex;
-    align-items: center;
-    border-bottom: solid 1px #777777;
+    align-items: center;    
 }
 header img{
     height: 80%;
@@ -40,11 +39,15 @@ header nav ul li a{
     font-size: 50px;
     margin: 25px;
 }
+header nav ul li a:hover{
+    font-size: 55px;
+}
 /* codigo para el titulo */
 .titulo{
     width: 100%;
     height: 75px;
     background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgb(15, 108, 184),rgba(0,102,183));
+    border: solid 1px #777777;
 }
 .titulo h1{
     width: 100%;
@@ -56,7 +59,7 @@ header nav ul li a{
 /* Codigo para el contenedor principal */
 #main-contain{
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     background-image:url('../image/fondo2.jpeg');
     background-repeat: no-repeat;
     background-size:contain;
@@ -93,12 +96,33 @@ header nav ul li a{
 .results-button{
     width: 25%;
     height: 8%;
-    background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Kaisei Tokumin', serif;
-    border-radius: 25px;
+    border-radius: 50px;
     margin: 20%;
+    cursor: pointer; 
+    border-radius: 50px;
+    background-image: linear-gradient(to right, rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));       
 }
+.results-button:hover{
+    color: white;
+    transform: scale(1.03); 
+    box-shadow: 15px 15px 40px 10px #0066b7 inset;
+    border: 2px solid #014e8d ;        
+}
+/*Estilos para el tercer contenedor*/
+#third-contain{
+    width: 100%;
+    height: 80vh;
+}
+
+#third-contain .separador{
+    width: 80%;
+    height: 60px;
+    background-color: #1c6a5c;
+
+}
+
 /* De 1295 para abajo vaa  coger las siguientes condiciones*/
 @media(max-width:1295px){
     header nav ul li a{
