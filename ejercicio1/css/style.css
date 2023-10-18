@@ -115,12 +115,27 @@ header nav ul li a:hover{
     width: 100%;
     height: 80vh;
 }
-
 #third-contain .separador{
     width: 80%;
     height: 60px;
     background-color: #1c6a5c;
-
+}
+#third-contain .info2{
+    width: 80%;
+    height: 280px;
+    margin: 10%;
+    background-image: linear-gradient(to right,rgb(228, 228, 228),rgb(217, 217, 217),rgb(192, 192, 192));
+    display: inline-flex;
+}
+#third-contain .info2 img{
+    width: 470px;
+    height: 100%;    
+}
+#third-contain .info2 .texto{
+    font-family: 'Kaisei Tokumin', serif;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
 }
 
 /* De 1295 para abajo vaa  coger las siguientes condiciones*/
