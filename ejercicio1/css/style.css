@@ -19,7 +19,7 @@ font-family: 'Roboto Slab', serif; */
 /*Estilos del header*/
 header{
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex;
     align-items: center;    
 }
@@ -36,34 +36,35 @@ header nav ul{
     list-style: none ;    
 }
 header nav ul li a{
-    font-size: 50px;
+    font-size: 25px;
     margin: 25px;
 }
 header nav ul li a:hover{
-    font-size: 55px;
+    font-size: 30px;
 }
 /* codigo para el titulo */
 .titulo{
     width: 100%;
-    height: 75px;
+    height: 55px;
     background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgb(15, 108, 184),rgba(0,102,183));
     border: solid 1px #777777;
 }
 .titulo h1{
     width: 100%;
-    font-size: 50px;
+    font-size: 32px;
     color: #F1F1F1;
     text-align: center;
-    padding: 13px;
+    padding: 13px 0px;
 }
 /* Codigo para el contenedor principal */
 #main-contain{
     width: 100%;
-    height: 85vh;
+    height: 80vh;
+    text-align: center;
     background-image:url('../image/fondo2.jpeg');
     background-repeat: no-repeat;
     background-size:contain;
-    background-position: center top;
+    background-position: center top; 
 }
 /* Estilos para el segundo contenedor (Info e imagen) */
 .second-contain{
@@ -73,33 +74,26 @@ header nav ul li a:hover{
 }
 /* Estilos para el divisor de la informacion */
 .second-contain .info{
-    width: 55%;
+    width: 45%;
     text-align: center;
     padding-top: 100px;
     margin-left: 10%;
 }
 .second-contain .info p{
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Kaisei Tokumin', serif;
     font-weight: 800;
     color: black;
-}
-/*Estilos para el boton*/
-#main-contain .next-button{
-    position:absolute;
-    background-color: #ffffff00;
-    font-size: 45px;
-    right: 5%;
-    bottom: 40%;
 }
 /* Estilos para el boton*/
 .results-button{
     width: 25%;
     height: 8%;
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Kaisei Tokumin', serif;
     border-radius: 50px;
-    margin: 20%;
+    margin-top: 20%;
+    margin-right: 30%;
     cursor: pointer; 
     border-radius: 50px;
     background-image: linear-gradient(to right, rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));       
@@ -110,146 +104,106 @@ header nav ul li a:hover{
     box-shadow: 15px 15px 40px 10px #0066b7 inset;
     border: 2px solid #014e8d ;        
 }
-/*Estilos para el tercer contenedor*/
+/* Estilos para el tercer contenedor */
 #third-contain{
     width: 100%;
     height: 80vh;
 }
 #third-contain .separador{
-    width: 80%;
+    width: 100%;
     height: 60px;
     background-color: #1c6a5c;
 }
 #third-contain .info2{
     width: 80%;
     height: 280px;
-    margin: 10%;
+    margin: 4% 8%;
     background-image: linear-gradient(to right,rgb(228, 228, 228),rgb(217, 217, 217),rgb(192, 192, 192));
     display: inline-flex;
 }
 #third-contain .info2 img{
-    width: 470px;
-    height: 100%;    
+    width: 500px;
+    height: 100%; 
 }
 #third-contain .info2 .texto{
     font-family: 'Kaisei Tokumin', serif;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 23px;
     text-align: center;
+    margin: auto;
 }
-
-/* De 1295 para abajo vaa  coger las siguientes condiciones*/
-@media(max-width:1295px){
-    header nav ul li a{
-        font-size: 45px;
-    }
-    .second-contain .info p{
-        font-size: 27px;
-    }
-    .titulo h1{
-        font-size: 40px;
-    }
-    .results-button{
-        font-size: 18px;
-    }
+#third-contain .separador2{
+    width: 100%;
+    height: 80px;
+    background-color: #797979;
 }
-@media(max-width:1100px){
-    .titulo h1{
-        font-size: 35px;
-    }
-    .second-contain .info p{
-        font-size: 24px;
-    }                                                                                                                                                                                                                                                                                                    
+/* Estilos para los botones del tercer contenedor */
+#third-contain .separador2 button{
+    width: 18%;
+    height: 60px;
+    margin: 10px;   
 }
 @media(max-width:990px){
     header{
-        height: 160px;
+        height: 120px;
         display:block;
         text-align: center;
     }
     header img{
-        height: 100px;
+        height: 80px;
         justify-content: center;
     }
-    /*Estilos para barra de navegación*/
     header nav{
         width: 100%;
-        height: 60px;
-    }
+        height: 40px;
+    }    
     header nav ul{
-        height: 50px;
+        height: 30px;
         justify-content: center;
-    }
-    header nav ul li{
-        font-size: 40px;
-    }
-    .titulo{
-        height: 80px;
-        background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgb(15, 108, 184),rgba(0,102,183));
-    }
+    }       
     .titulo h1{
-        font-size: 30px;
-        padding: 10px;
-        width: 70%;
-        margin: auto;
+        font-size: 28px;
     }
     #main-contain{
         background-size: auto;
         position: relative;
-    }
+    }    
     .second-contain{
         width: 100%;
         height: 30%;
         position: absolute;
         bottom: 2%;
         background-image: linear-gradient(to top, rgba(251, 251, 251,1.9), rgba(251, 251, 251,0.9), rgba(251, 251, 251,0.8),rgba(255, 255, 255,0));
-        display: flex;
+        display: flex; 
     }
-    /* Estilos para el divisor de la informacion */
     .second-contain .info{
-        width: 60%;
-        text-align: center;
         padding-top: 60px;
         margin-left: 5%;
-    }
-    .second-contain .info p{
-        font-size: 20px;
-    }
+    }    
     .results-button{
         width: 25%;
         height: 30%;
         background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgba(0,102,183));
-        font-size: 20px;
-        margin: auto;
+        margin: auto; 
     }
 }
 @media(max-width:700px){
     header{
-        height: 130px;
+        height: 105px;
     }
     header img{
-        height: 80px;
+        height: 70px;
     }
     header nav{
         height: 30px;
-    }
-    header nav ul{
-        height: 25px;
-    }
-    header nav ul li a{
-        font-size: 30px;
-    }
+    }     
     .titulo{
-        height: 75px;
+        height: 70px;
     }
     .titulo h1{
         font-size: 22px;
     }
-    .titulo h1{
-        font-size: 22px;
-    }
+    .second-contain .info p{
+    font-size: 15px;
+    }   
 }
-
-
-
-
