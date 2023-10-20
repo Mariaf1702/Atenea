@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Imporat la libreria de Fontawesome -->
     <script src="https://kit.fontawesome.com/3ffe6415c1.js" crossorigin="anonymous"></script> 
+    <!-- Import the component -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
     <title>Laboratorio de Analisis de Movimiento</title>
     <title>Document</title>
 </head>
@@ -62,7 +64,22 @@
                 <button id="others"></button>
             </nav>
         </div>
+        <div class="modthreed">
+            <model-viewer
+            src="3d/Friman.glb"
+            ios-src=""
+            poster=""
+            alt="Aca hay un robot"
+            shadow-intensity="1"
+            camera-controls
+            auto-rotate
+            ar>
+                
+            </model-viewer>
+        </div>
     </section>
+
+
     
 </body>
 </html>
