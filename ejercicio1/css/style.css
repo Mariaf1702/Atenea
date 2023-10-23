@@ -64,8 +64,10 @@ header nav ul li a:hover{
     text-align: center;
     background-image:url('../image/fondo2.jpeg');
     background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center top; 
+    /* background-size:contain;
+    background-position: center top;  */
+    background-size: cover;
+    background-position: center;
 }
 /* Estilos para el segundo contenedor (Info e imagen) */
 .second-contain{
@@ -146,7 +148,7 @@ header nav ul li a:hover{
 }
 
 /* Estilos 3d */
-#third-contain .modthreed model-viewer {
+#third-contain .modthreed  {
     width: 80%;
 
 }
