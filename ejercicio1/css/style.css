@@ -146,17 +146,25 @@ header nav ul li a:hover{
     height: 60px;
     margin: 10px;   
 }
-
-/* Estilos 3d */
-#third-contain .modthreed  {
-    width: 80%;
-
+footer{
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgba(208,233,255),rgba(136,187,230),rgb(15, 108, 184),rgba(0,102,183));    
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Kaisei Tokumin', serif;
+    color: white;
+    font-size: 20px;
+}
+footer .pieinfo{
+    width: 45%;
+    display: grid;
+    margin: 3%;
 }
 @media(max-width: 1250px){
     #main-contain{
         background-size: auto 780px;
-    }   
-
+    }  
 }
 @media(max-width:990px){
     header{
