@@ -110,7 +110,7 @@ header nav ul li a:hover{
 /* Estilos para el tercer contenedor */
 #third-contain{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
 }
 #third-contain .separador{
     width: 100%;
@@ -123,15 +123,16 @@ header nav ul li a:hover{
     margin: 4% 8%;
     background-image: linear-gradient(to right,rgb(228, 228, 228),rgb(217, 217, 217),rgb(192, 192, 192));
     display: inline-flex;
+    align-items: center;
 }
 #third-contain .info2 img{
-    width: 500px;
-    height: 100%; 
+    width: 400px;
+    height: 80%; 
 }
 #third-contain .info2 .texto{
     font-family: 'Kaisei Tokumin', serif;
     font-weight: 800;
-    font-size: 23px;
+    font-size: 18px;
     text-align: center;
     margin: auto;
 }
@@ -140,11 +141,29 @@ header nav ul li a:hover{
     height: 80px;
     background-color: #797979;
 }
-/* Estilos para los botones del tercer contenedor */
-#third-contain .separador2 button{
-    width: 18%;
-    height: 60px;
-    margin: 10px;   
+#third-contain .separador2 nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+#third-contain .separador2 nav ul li{
+    width: 15%;
+    margin: 10px 20px; 
+    height: 70px;
+}
+#third-contain .separador2 nav ul img{
+    width: 100%;
+    height: 100%;    
+}
+#forth-contain{
+    height: 70vh;  
+    width: 100%;  
+    text-align: center;
+}
+#forth-contain div{
+    height: 100%;
+    width: 100%;
 }
 footer{
     width: 100%;
